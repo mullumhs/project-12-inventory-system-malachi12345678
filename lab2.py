@@ -17,24 +17,24 @@ from lab1 import Item
 
 class InvetoryManager:
     def __init__(self):
-        self.tickets = []
+        self.items = []
 
     def add_item(self , item):
-        pass
+        self.items.append(item)
 
 
     def remove_item(self , item):
+        self.items.remove(item)
+
+
+    def update_item(self , item):
         pass
 
+    def display_item(self , item):
+        pass  
 
-    def _item
-
-
-    def _item
-    
-
-    def _item
-    
+    def find_item(self , item):
+        pass
          
 
 
