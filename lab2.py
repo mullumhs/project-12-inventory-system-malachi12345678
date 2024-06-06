@@ -20,13 +20,14 @@ class InvetoryManager:
         self.items = []
 
     def add_item(self , item):
-        item = Item()
-        
-        
-        self.items.append(item)
+        for list_item in self.items:
+            if item == list_item:
+                self.items.append(item)
 
     def remove_item(self , item):
-        self.items.remove(item)
+        for list_item in self.items:
+            if item == list_item:
+                self.items.remove(item)
 
     def update_item_(self , item , name):
         item.setName(name)  
@@ -66,3 +67,8 @@ manager.add_item(eggs)
 manager.add_item(milk)
 
 manager.display_all()
+
+manager.remove_item(eggs)
+manager.display_item(milk)
+for i in range(12312):
+    print("🗿🗿🗿🗿🗿🗿🗿🗿🗿🗿🗿🗿🗿🗿🗿🗿🗿🗿🗿🗿🗿🗿🗿🗿🗿🗿🗿🗿🗿🗿🗿🗿🗿🗿🗿🗿🗿🗿🗿🗿🗿🗿🗿🗿🗿🗿🗿🗿🗿🗿🗿🗿🗿🗿🗿🗿🗿🗿🗿🗿")
