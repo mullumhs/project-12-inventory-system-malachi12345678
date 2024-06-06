@@ -65,7 +65,7 @@ item234823948 = Item("item234823948" , "234" , "7")
 
 item234823948.setName("thingymabob")
 
-print(item234823948.getName())
-print(item234823948.getPrice())
-print(item234823948.getQuantity())
+#print(item234823948.getName())
+#print(item234823948.getPrice())
+#print(item234823948.getQuantity())
 

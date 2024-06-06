@@ -20,23 +20,34 @@ class InvetoryManager:
         self.items = []
 
     def add_item(self , item):
+        item = Item()
+        
+        
         self.items.append(item)
-
 
     def remove_item(self , item):
         self.items.remove(item)
 
+    def update_item_(self , item , name):
+        item.setName(name)  
 
-    def update_item(self , item):
-        pass
+    def update_item_price(self , item , price):
+        item.setPrice(price)
+
+    def update_item_quantity(self , item , quantity):
+        item.setQuantity(quantity)
 
     def display_item(self , item):
-        pass  
-
-    def find_item(self , item):
-        pass
+        print(item.getName())
+        print(item.getPrice())
+        print(item.getQuantity())  
          
-
+    def display_all(self):
+        for item in self.items:
+            print(item.getName())
+            print(f"{item.getPrice()}$")
+            print(f"{item.getQuantity()} left in stock")
+            print("-------------------------------------------------")     
 
 
 
@@ -44,5 +55,14 @@ class InvetoryManager:
 # Step 2: Create instances of the Item class and InventoryManager, then demonstrate their usage.
 # E.g. add items to the inventory, remove items, update items, and display the inventory.
 
+manager = InvetoryManager()
 
+milk = Item("milk" , "234" , "7")
 
+eggs = Item("eggs" , "4" , "7234")
+
+manager.add_item(eggs)
+
+manager.add_item(milk)
+
+manager.display_all()
