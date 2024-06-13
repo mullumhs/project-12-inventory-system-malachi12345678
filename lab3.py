@@ -10,10 +10,13 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 # Step 1: Import necessary classes (Item class from lab1, InventoryManager class from lab2)
-
+from lab1 import Item
+from lab2 import InvetoryManager
 
 # Step 2: Define an add_item function that prompts the user for item details and adds the item to the inventory
+def add_item(inventory):    
 
+    
 
 # Step 3: Define an update_item function that prompts the user for item details and updates the item in the inventory
 
